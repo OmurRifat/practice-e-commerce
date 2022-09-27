@@ -5,6 +5,7 @@
 }
 
 .products-container {
+    margin-left: 60px;
     margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
