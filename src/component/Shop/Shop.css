@@ -13,8 +13,8 @@
 }
 
 .cart-container {
-    background-color: rgba(28, 43, 53, 1);
+    background-color: rgba(255, 153, 0, 0.3);
     margin-top: 40px;
-    color: white;
+    color: dark;
     border-radius: 5px;
 }
