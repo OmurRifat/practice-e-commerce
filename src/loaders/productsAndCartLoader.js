@@ -9,7 +9,7 @@ export const productsAndCartLoader = async () => {
     //get stored data
     const savedCart = storeAddedProduct();
     // console.log(savedCart)
-    const previousCart = [];
+    const initialCart = [];
     for (const id in savedCart) {
         const addedProduct = products.find(product => product.id === id);
         // console.log(id, addedProduct)
@@ -17,11 +17,11 @@ export const productsAndCartLoader = async () => {
             const quantity = savedCart[id];
             // console.log(id, quantity)
             addedProduct.quantity = quantity;
-            previousCart.push(addedProduct);
+            initialCart.push(addedProduct);
         }
     }
     // console.log(previousCart)
 
 
-    return { products, previousCart };
+    return { products, initialCart };
 }
