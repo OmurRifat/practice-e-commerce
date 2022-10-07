@@ -37,12 +37,13 @@
     width: 100%;
     position: absolute;
     bottom: 0px;
-    background: #FFE0B3;
-    border: 1px solid #95A0A7;
+    background: #1C2B35;
+    border: 0px solid #95A0A7;
     border-radius: 0px 0px 8px 8px;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
 .product-btn p {
@@ -52,7 +53,7 @@
     font-size: 15px;
     line-height: 18px;
     letter-spacing: 0.0125em;
-    color: #0E161A;
+    color: white;
     margin-right: 5px;
 }
 

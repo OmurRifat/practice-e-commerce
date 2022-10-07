@@ -1,18 +1,19 @@
 import React, { useEffect, useState } from 'react';
+import { useLoaderData } from 'react-router-dom';
 import { addToDb, storeAddedProduct } from '../../utilities/fakedb';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './Shop.css';
 
 const Shop = () => {
-    const [products, setProducts] = useState([]);
+    // const [products, setProducts] = useState([]);
+    const products = useLoaderData();
     const [cart, setCart] = useState([]);
-    // console.log(products)
-    useEffect(() => {
-        fetch('products.json')
-            .then(res => res.json())
-            .then(data => setProducts(data));
-    }, []);
+    // useEffect(() => {
+    //     fetch('products.json')
+    //         .then(res => res.json())
+    //         .then(data => setProducts(data));
+    // }, []);
     useEffect(() => {
         // console.log(products, "From the 2nd effect")
         const stroedProducts = storeAddedProduct();
